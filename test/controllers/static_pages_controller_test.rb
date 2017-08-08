@@ -21,7 +21,7 @@ end
   test "should get help" do
     get help_path
     assert_response :success
-     assert_select "title", "Help | #{@base_title}"
+     assert_select "title", "#{@base_title}"
   end
 
   test "should get about" do
@@ -34,5 +34,6 @@ end
     assert_response :success
     assert_select "title", "Contact | #{@base_title}"
   end
+
 end
 
